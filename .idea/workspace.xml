@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46e3464d-3e2c-4286-b662-465694b6201f" name="Default Changelist" comment="Default Changelist" />
+    <list default="true" id="46e3464d-3e2c-4286-b662-465694b6201f" name="Default Changelist" comment="Default Changelist">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/vendor/函数形参综合练习.html" beforeDir="false" afterPath="$PROJECT_DIR$/js/vendor/函数形参综合练习.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +102,16 @@
       <workItem from="1604043502945" duration="83000" />
       <workItem from="1604043601891" duration="3000" />
       <workItem from="1604043627929" duration="6162000" />
+      <workItem from="1604063107445" duration="468000" />
     </task>
+    <task id="LOCAL-00001" summary="Default Changelist">
+      <created>1604063247071</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604063247071</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,8 +127,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Default Changelist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="479" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604063568339">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="479" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1604063568339" />
     <state x="619" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602826089608">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -125,10 +146,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602824404290" />
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1604062993416">
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1604063381130">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1604062993416" />
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1604063381130" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1602826755639">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
