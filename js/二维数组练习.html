@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>二维数组练习</title>
+</head>
+<body>
+<script>
+  let arr1=new Array()
+  arr1[0]=[92,97,88,86]//学生1
+  arr1[1]=[87,62,77,54]//学生2
+  arr1[2]=[74,66,82,94]//3
+  arr1[3]=[81,92,60,60]//4
+  let chengji=new Array()
+  for (let i=0;i<arr1.length;i++) {
+    chengji[i]=0;
+    for (let j = 0; j < 4; j++) {
+      chengji[i] += arr1[j][i]
+    }
+    chengji[i] = chengji[i]/4
+  }
+  document.write("英语平均成绩为"+chengji[0])
+  document.write("数学平均成绩为"+chengji[1])
+  document.write("JS平均成绩为"+chengji[2])
+  document.write("数据库平均成绩为"+chengji[3])
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>数组合并、去重、排序</title>
+</head>
+<body>
+<script>
+  let arr1=new Array()
+  let arr2=new Array()
+  for (let i=1;i<=500;i++)
+  {
+    if (i%3==0)
+    {
+      arr1.push(i)
+    }
+    if (i%4==0)
+    {
+      arr2.push(i)
+    }
+  }
+  arr1=arr1.concat(arr2)
+  arr1.sort(function (a, b)  {
+    return b-a
+  })
+  for (let i=0;i<arr1.length;i++) {
+    if (arr1.indexOf(arr1[i])!=i)
+    {
+      arr1.splice(i,1)
+    }
+  }
+  document.write(arr1.toString()+"\n")
+
+</script>
+</body>
+</html>

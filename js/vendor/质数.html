@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>求100以内质数</title>
+</head>
+<body>
+<script>
+  let i,j;
+  for (i=2;i<=100;i++)
+  {
+    let k=true;
+    for (j=2;j<i;j++)
+    {
+      if (i % j == 0) {
+        k=false;
+      }
+    }
+  if (k)
+  {
+    document.write(i+" ")
+  }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>问答</title>
+</head>
+<body>
+<script>
+  let i=prompt();
+  let j=0;
+  let k;
+  while (true)
+  {
+    j++;
+    if (i!=null&&i!=="")
+    {
+      if (j%2==0)
+      {
+        k=prompt("答:"+i)
+      }
+      else
+      {
+        k=prompt("问:"+i)
+      }
+      i=k;
+    }
+    else
+      break;
+  }
+</script>
+</body>
+</html>

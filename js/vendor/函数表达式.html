@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>函数表达式</title>
+</head>
+<body>
+<script>
+  let year=prompt("请输入一个年份")
+  let bool=function isLeapYear (a)
+  {
+    return a%4==0&&a%100!=0||a%400==0
+  }
+  document.write(bool(year))
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>匿名函数立即执行</title>
+</head>
+<body>
+<script>
+  (function (...num)
+  {
+    let sum=1
+    for(let i=0;i<num.length;i++)
+    {
+      sum *=num[i]
+    }
+    alert(sum)
+  }(1,2,3,4,5))
+</script>
+</body>
+</html>
