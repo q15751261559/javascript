@@ -2,24 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>函数形参综合练习</title>
+  <title>定义一个函数func1，其中一个参数是函数引用fn，
+    里面执行参数对应的fn功能（携带一些参数）。
+    而调用func1时传入的函数使用匿名函数形式，
+    该匿名函数的功能就是打印自己被调用时的入参。
+  </title>
+
+
 </head>
 <body>
 <script>
-  function func1(fn)
+  function func1(fn,a,b)
   {
-
+    fn(1,2,3,4,5,a,b)
   }
-  function fn()
-  {
-  }
-  (function (func1){
-
-    //此时会输出张培跃好帅！
-
-    console.log("张培跃"+str);
-
-  })(fn(1,2,3))
+  func1(function (){
+    let i=[]
+    alert(arguments.length)
+    for (let j=0;j<arguments.length;j++)
+    {
+      i.push(arguments[j])
+    }
+    document.write(i.toString())
+  },6,7)
 </script>
 </body>
 </html>
