@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>构造函数</title>
+</head>
+<body>
+<script>
+  function Student(name,id,age,Class){
+    this.name=name;
+    this.id=id;
+    this.age=age;
+    this.class=Class;
+    this.print=function () {
+      document.write('姓名为: '+this.name+' 学号为：'+this.id+' 年龄为：'+this.age+' 班级为'+this.class);
+    };
+  }
+  let fun1 = new Student("石振宇",2002922215,20,"软件2028");
+  let fun2 = new Student("陈涛",2002922202,20,"软件2028");
+  let fun3= new Student("马千",2002922209,20,"软件2028");
+  fun1.print();
+  fun2.print();
+  fun3.print();
+</script>
+</body>
+</html>

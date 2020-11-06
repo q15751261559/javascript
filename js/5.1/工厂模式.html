@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>工厂模式</title>
+  <script>
+  function students(name,id,age,Class) {
+  let student={};
+  student.name=name;
+  student.id=id;
+  student.age=age;
+  student.class=Class;
+  student.print=function () {
+    document.write('姓名为: '+this.name+' 学号为：'+this.id+' 年龄为：'+this.age+' 班级为'+this.class)
+  };
+  return student;
+  }
+  let fun1 = students("石振宇",2002922215,20,"软件2028")
+  let fun2 = students("陈涛",2002922202,20,"软件2028")
+  let fun3= students("马千",2002922209,20,"软件2028")
+  fun1.print()
+  fun2.print()
+  fun3.print()
+  </script>
+</head>
+<body>
+
+</body>
+</html>

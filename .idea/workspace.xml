@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46e3464d-3e2c-4286-b662-465694b6201f" name="Default Changelist" comment="连续单杀">
+    <list default="true" id="46e3464d-3e2c-4286-b662-465694b6201f" name="Default Changelist" comment="Default Changelist">
+      <change afterPath="$PROJECT_DIR$/js/5.1/Class.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/5.1/对象字面量.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/5.1/工厂模式.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/5.1/构造函数.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +37,9 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -103,6 +110,7 @@
       <workItem from="1604043627929" duration="6162000" />
       <workItem from="1604063107445" duration="1359000" />
       <workItem from="1604064474153" duration="352000" />
+      <workItem from="1604639748896" duration="8238000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1604063247071</created>
@@ -153,14 +161,14 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="479" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1604063568339" />
-    <state x="619" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602826089608">
+    <state x="619" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604645079424">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="619" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1602826089608" />
-    <state x="360" y="77" key="SettingsEditor" timestamp="1604064825637">
-      <screen x="0" y="0" width="2048" height="1112" />
+    <state x="619" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1604645079424" />
+    <state x="270" y="57" key="SettingsEditor" timestamp="1604070884779">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602824404290" />
+    <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604070884779" />
     <state x="360" y="77" key="SettingsEditor/0.0.2048.1112@0.0.2048.1112" timestamp="1604064825637" />
     <state x="792" y="298" key="Vcs.Push.Dialog.v2" timestamp="1604063681621">
       <screen x="0" y="0" width="2048" height="1112" />

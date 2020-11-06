@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Class</title>
+</head>
+<body>
+<script>
+  class Employee{
+    constructor(name,id,age,department,wages)
+    {
+      this.name=name;
+      this.id=id
+      this.age=age
+      this.department=department
+      this.wages=wages
+    }
+    print()
+    {
+      document.write("姓名："+this.name+"工号:"+this.id+"年龄:"+this.age+"部门："+this.department+"工资:"+this.wages)
+    }
+
+  }
+  let fun1=new Employee("石振宇",2002922215,20,"软件",10000)
+  let fun2=new Employee("陈涛",2002922202,20,"软件",100)
+  let fun3=new Employee("马千",2002922209,20,"软件",1000)
+  fun1.print()
+  fun2.print()
+  fun3.print()
+</script>
+</body>
+</html>
