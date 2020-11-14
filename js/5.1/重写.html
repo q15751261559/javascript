@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>重写</title>
+
+</head>
+<body>
+<script>
+  Date.prototype.toString = function(){
+    let year=this.getFullYear()
+    let century=year+100>=1000?String(year+100).slice(0,2):String(year+100).slice(0,1) //Date数据类型的年份存储两位数，会自动加1900或2000，存储一位数会将日期项作为年份，所以不需要考虑this.getFullYear()值为两位数和一位数的情况
+    let doubleDigitYear=String(year).slice(String(year).length-2,String(year).length)
+    let month=this.getMonth()+1
+    let day=this.getDate()
+    return `今天是第${century}世纪、${doubleDigitYear}年、${month}月、${day}日`
+  }
+  let today=new Date()
+  let day1=new Date("618-8-13")
+  let day2=new Date("7-7-3")
+  document.write(today.toString())
+  document.write("<br/>")
+  document.write(day1.toString())
+  document.write("<br/>")
+  document.write(day2.toString())
+</script>
+
+</body>
+</html>

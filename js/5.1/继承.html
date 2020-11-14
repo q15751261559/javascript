@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>继承</title>
+</head>
+<body>
+<script>
+  class Person{
+    constructor(name,age)
+    {
+      this.name=name;
+      this.age=age;
+    }
+    print()
+    {
+      document.write(" 姓名为:"+this.name+" 年龄为:"+this.age)
+    }
+  }
+  class Student extends Person
+  {
+    constructor(name,age,major)
+    {
+      super(name,age)
+      this.major=major
+    }
+    print() {
+      super.print();
+      document.write(" 专业为:"+this.major)
+    }
+  }
+  class StudentLeader extends Student
+  {
+    constructor(name,age,major,position)
+    {
+      super(name,age,major)
+      this.position=position
+    }
+    print() {
+      super.print();
+      document.write(" 班委职务为："+this.position)
+    }
+  }
+  let a=new Person("石振宇",21)
+  let b=new Student("石振宇",21,"软件工程")
+  let c=new StudentLeader("石振宇",21,"软件工程","学习委员")
+  a.print()
+  document.write("<br/>")
+  b.print()
+  document.write("<br/>")
+  c.print()
+  document.write("<br/>")
+
+</script>
+
+</body>
+</html>
