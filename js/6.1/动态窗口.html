@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>动态窗口</title>
+</head>
+<body>
+<button onclick="tanchu()">弹出窗口</button>
+<script>
+  let url=""
+  let m
+  let features = 'height=10, width=10,top='+(window.innerHeight-140)+',left='+(window.innerWidth-200);
+  function tanchu(){
+     m=window.open(url,"newW",features)
+    setTimeout (function () {  //定时器
+      if (m.closed) {
+        console.log("创建的窗口已经关闭。");
+      } else {
+        m.close();
+      }
+    }, 5000);
+    setInterval(function () {
+      let a=10,b=10
+      if (m.window.screen.width<200)
+      {
+      }
+        },1000)
+  }
+
+
+</script>
+</body>
+</html>
