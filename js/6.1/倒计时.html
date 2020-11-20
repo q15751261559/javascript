@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>倒计时</title>
+</head>
+<body>
+<div>剩余时间为：<span id="daojishi">3</span>秒</div>
+<script>
+  let a=3,b
+  function fun()
+  {
+    a--
+    document.getElementById("daojishi").innerHTML=a.toString()
+  }
+  b=setInterval(fun,1000)
+  function c(){
+    clearInterval(b)
+    window.location.href="https://www.baidu.com"
+  }
+  setTimeout (c, 3000);
+</script>
+</body>
+</html>

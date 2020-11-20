@@ -20,10 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46e3464d-3e2c-4286-b662-465694b6201f" name="Default Changelist" comment="5.1">
-      <change afterPath="$PROJECT_DIR$/js/6.1/null.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/6.1/动态窗口.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/6.1/82928832_p1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/6.1/TIM图片20200410201854.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/6.1/__sirius_azur_lane_drawn_by_haneru__c07b2fac48e0a5b5e27c7ff50aa0e42c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/6.1/倒计时.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/6.1/定时器练习.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/5.1/重写.html" beforeDir="false" afterPath="$PROJECT_DIR$/js/5.1/重写.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/6.1/动态窗口.html" beforeDir="false" afterPath="$PROJECT_DIR$/js/6.1/动态窗口.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +55,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -63,6 +67,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\JAVA\javascript\js\6.1" />
       <recent name="C:\Users\石振宇\WebstormProjects\untitled\js" />
     </key>
   </component>
@@ -201,10 +206,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605859338508" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605859253853">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="574" y="196" width="896" height="915" key="search.everywhere.popup" timestamp="1605871892676">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605859253853" />
-    <state x="574" y="196" width="896" height="915" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1605375096582" />
+    <state x="574" y="196" width="896" height="915" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1605871892676" />
   </component>
 </project>

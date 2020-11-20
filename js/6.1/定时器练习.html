@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>定时器</title>
+</head>
+<body>
+<button onclick="image()">开始轮播</button>
+<button onclick="image2()">结束轮播</button>
+<br/>
+<img id="tu" width="800"/>
+<script>
+  let i=0,b;
+  let images=["82928832_p1.jpg","__sirius_azur_lane_drawn_by_haneru__c07b2fac48e0a5b5e27c7ff50aa0e42c.jpg","TIM图片20200410201854.jpg"];
+  function image()
+  {
+    let a=function ()
+    {
+      if (i===images.length)
+      {
+        i=0
+      }
+      else {
+        document.getElementById('tu').src=images[i]
+        i++
+      }
+    }
+    b=setInterval(a,2000)
+  }
+  function image2()
+  {
+    clearInterval(b)
+  }
+</script>
+</body>
+</html>
