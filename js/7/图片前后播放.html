@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>图片前后播放</title>
+</head>
+<body>
+<button onclick="image()">向后轮播</button>
+<button onclick="image2()">向前轮播</button>
+<br/>
+
+<img id="tu" width="800"/>
+<script>
+  let i=0,b;
+  let images=["../../img/timg.jpg","../../img/timg1.jpg","../../img/timg2.jpg"];
+  document.getElementById('tu').src=images[i]
+  function image()
+  {
+      i++
+      if (i===images.length)
+      {
+        i=0
+      }
+        document.getElementById('tu').src=images[i]
+  }
+  function image2(){
+    i--
+    if (i<0)
+    {
+      i=images.length-1
+    }
+      document.getElementById('tu').src=images[i]
+  }
+</script>
+</body>
+</html>

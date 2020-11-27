@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>classList</title>
+  在页面中为同一个DIV定义两个CSS的class样式（比如大小、颜色不同），
+  同时在页面中实现使用按钮给DIV指定对应样式的功能，
+  同时，还要实现通过鼠标点击DIV区域使得其可在两个不同的样式间切换的功能。
+  <style type="text/css">
+    div.class{
+      width: 500px;
+      height: 100px;
+      text-align: center;
+      font-size: 20px;
+      line-height:100px;
+    }
+    div.css1{
+      background-color: aquamarine;
+      width: 1000px;
+      height: 200px;
+      line-height:200px;
+      font-size: 40px;
+    }
+    div.css2 {
+
+    }
+  </style>
+</head>
+<body>
+<div class="class">classList</div>
+<input id="btn1" type="button" onclick="changeList()"
+       value="放大" />
+<input id="btn2" type="button" onclick="changeList1()"
+       value="缩小" />
+<script>
+  let elementDiv=document.getElementsByTagName("div")[1]
+  function changeList(){
+    if (!elementDiv.classList.contains("css1"))
+    {
+      elementDiv.classList.add("css1")
+    }
+  }
+  function changeList1(){
+
+  }
+</script>
+</body>
+</html>
