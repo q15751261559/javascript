@@ -19,15 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46e3464d-3e2c-4286-b662-465694b6201f" name="Default Changelist" comment="5.1">
-      <change afterPath="$PROJECT_DIR$/img/timg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/timg1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/timg2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/7/classList.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/7/图片前后播放.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/6.1/定时器练习.html" beforeDir="false" afterPath="$PROJECT_DIR$/js/6.1/定时器练习.html" afterDir="false" />
-    </list>
+    <list default="true" id="46e3464d-3e2c-4286-b662-465694b6201f" name="Default Changelist" comment="7" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,7 +129,7 @@
       <workItem from="1606455821644" duration="110000" />
       <workItem from="1606455945813" duration="6000" />
       <workItem from="1606455978001" duration="59000" />
-      <workItem from="1606456083747" duration="6655000" />
+      <workItem from="1606456083747" duration="6678000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1604063247071</created>
@@ -174,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605854211396</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="7">
+      <created>1606473245187</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606473245187</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,7 +195,8 @@
     <MESSAGE value="Default Changelist" />
     <MESSAGE value="连续单杀" />
     <MESSAGE value="5.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="5.1" />
+    <MESSAGE value="7" />
+    <option name="LAST_COMMIT_MESSAGE" value="7" />
   </component>
   <component name="WindowStateProjectService">
     <state x="479" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604063568339">
