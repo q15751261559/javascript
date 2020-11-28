@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>文本框</title>
+  <style type="text/css">
+    textarea.class1{
+      height: 300px;
+      width: 500px;
+    }
+  </style>
+</head>
+<body>
+<textarea name="文本框" class="class1" id="textarea"></textarea>
+<br/>
+<button onclick="btn1()">放大字体</button>
+<button onclick="btn2()">缩小字体</button>
+<br/>
+<input placeholder="请输入字体大小，只能输入数字" size="25" type="text" id="fontsize">
+<button onclick="btn3()">确定</button>
+<br/>
+<input  placeholder="请输入十六进制颜色码" size="25" type="text" id="16color">
+<button onclick="btn4()">确定</button>
+<br/>
+请输入RGB颜色值,只能输入数字,未输入默认值为0
+<input placeholder="Red:0"  size="5" type="text" id="RColor">
+<input placeholder="Green:0"  size="5" type="text" id="GColor">
+<input placeholder="Blue:0"  size="5" type="text" id="BColor">
+<button onclick="btn5()">确定</button>
+<br/>
+对齐方式
+<select id="select" onchange="onchange1()">
+  <option value ="left">左对齐</option>
+  <option value="center">居中</option>
+  <option value ="right">右对齐</option>
+</select>
+<script>
+  let size=10
+  let color,RColor,GColor,BColor
+  document.getElementById("textarea").style.fontSize=size+"px"
+  function btn1() {
+    size+=5
+    document.all[6].style.fontSize=size+"px"
+  }
+  function btn2(){
+    size-=5
+   document.getElementsByTagName("textarea")[0].style.fontSize=size+"px"
+  }
+  function btn3(){
+    size=Number(document.getElementById("fontsize").value)
+    document.getElementsByName("文本框")[0].style.fontSize=size+"px"
+  }
+  function btn4(){
+    color=document.getElementById("16color").value
+    document.getElementsByClassName("class1")[0].style.color=color
+  }
+  function btn5(){
+    RColor=document.getElementById("RColor").value!==""?(Number)(document.getElementById("RColor").value):0
+    GColor=document.getElementById("GColor").value!==""?(Number)(document.getElementById("GColor").value):0
+    BColor=document.getElementById("BColor").value!==""?(Number)(document.getElementById("BColor").value):0
+    document.getElementById("textarea").style.color=`rgb(${RColor},${GColor},${BColor})`
+  }
+  function onchange1(){
+    document.getElementById("textarea").style.textAlign=document.getElementById("select").value
+  }
+</script>
+</body>
+</html>

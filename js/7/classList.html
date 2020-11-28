@@ -13,35 +13,64 @@
       text-align: center;
       font-size: 20px;
       line-height:100px;
+      background-color: aquamarine;
     }
     div.css1{
-      background-color: aquamarine;
       width: 1000px;
       height: 200px;
       line-height:200px;
       font-size: 40px;
     }
     div.css2 {
-
+      background-color: red;
+    }
+    div.css3{
+      background-color: blue;
+    }
+    div.css4{
+      font-weight:bold;
+    }
+    div.css5{
+      color: blue;
+    }
+    div.css6{
+      color: red;
     }
   </style>
 </head>
 <body>
-<div class="class">classList</div>
-<input id="btn1" type="button" onclick="changeList()"
-       value="放大" />
-<input id="btn2" type="button" onclick="changeList1()"
-       value="缩小" />
+<div onclick="changeList1()" class="class">classList</div>
+<input id="btn1" type="button" onclick="changeList1()"
+       value="放大与缩小" />
+<input id="btn2" type="button" onclick="changeList2()"
+       value="背景颜色为红色" />
+<input id="btn3" type="button" onclick="changeList3()"
+       value="背景颜色为蓝色" />
+<input id="btn4" type="button" onclick="changeList4()"
+       value="字体加粗" />
+<input id="btn5" type="button" onclick="changeList5()"
+       value="字体颜色为蓝色" />
+<input id="btn6" type="button" onclick="changeList6()"
+       value="字体颜色为红色" />
 <script>
-  let elementDiv=document.getElementsByTagName("div")[1]
-  function changeList(){
-    if (!elementDiv.classList.contains("css1"))
-    {
-      elementDiv.classList.add("css1")
-    }
-  }
+  let elementDiv=document.getElementsByTagName("div")[0]
   function changeList1(){
-
+    elementDiv.classList.toggle('css1')
+  }
+  function changeList2(){
+    elementDiv.classList.toggle('css2')
+  }
+  function changeList3(){
+    elementDiv.classList.toggle('css3')
+  }
+  function changeList4(){
+    elementDiv.classList.toggle('css4')
+  }
+  function changeList5(){
+    elementDiv.classList.toggle('css5')
+  }
+  function changeList6(){
+    elementDiv.classList.toggle('css6')
   }
 </script>
 </body>
