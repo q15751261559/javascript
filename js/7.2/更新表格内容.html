@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>更新表格</title>
+  <style type="text/css">
+    table{
+      border:solid #add9c0;
+      border-width:1px 0px 0px 1px
+    }
+    td{
+      border:solid #add9c0;
+      border-width:0px 1px 1px 0px;
+      padding-left:10px;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+<table>
+  <tr><td>姓名</td><td>学号</td><td>成绩</td><td>删除</td></tr>
+</table>
+<br/>
+<input placeholder="姓名"  size="5" type="text" id="name">
+<input placeholder="学号"  size="5" type="text" id="id">
+<input placeholder="成绩"  size="5" type="text" id="result">
+<button onclick="btn1()" >插入</button>
+<script>
+  function btn1(){
+    let name,id,result,table
+    name=document.getElementById("name").value
+    id=(Number)(document.getElementById("id").value)
+    result=(Number)(document.getElementById("result").value)
+    table=document.getElementsByTagName("table")[0]
+    let tr=document.createElement("tr")
+    let tdName=document.createElement("td")
+    let tdId=document.createElement("td")
+    let tdResult=document.createElement("td")
+    let del=document.createElement("td")
+    tdName.innerHTML=name
+    tdId.innerHTML=id
+    tdResult.innerHTML=result
+    del.innerHTML='<button onclick="btn2(this)">删除</button>'
+    tr.appendChild(tdName)
+    tr.appendChild(tdId)
+    tr.appendChild(tdResult)
+    tr.appendChild(del)
+    table.appendChild(tr)
+  }
+  function btn2(obj){
+    obj.parentNode.parentNode.parentNode.removeChild(obj.parentNode.parentNode)
+  }
+</script>
+</body>
+</html>

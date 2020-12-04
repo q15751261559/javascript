@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dom创建表格</title>
+  <style type="text/css">
+    table{
+      border:solid #add9c0;
+      border-width:1px 0px 0px 1px
+    }
+    td{
+      border:solid #add9c0;
+      border-width:0px 1px 1px 0px;
+      padding-left:10px;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+<input placeholder="行"  size="5" type="text" id="hang">
+<input placeholder="列"  size="5" type="text" id="lie">
+<button onclick="btn1()">确定</button>
+<br/>
+<script>
+  let table,body
+  let hang,lie
+  function btn1(){
+      hang=(Number)(document.getElementById("hang").value)
+      lie=(Number)(document.getElementById("lie").value)
+      table=document.createElement("table")
+
+      body=document.getElementsByTagName("body")[0]
+      body.appendChild(table);
+    for(let i=0;i<hang;i++){
+      let tr=table.insertRow(i);
+      for(let j=0;j<lie;j++){
+        let td=tr.insertCell(j);
+        td.innerHTML="第"+(i+1)+"行"+"第"+(j+1)+"列"
+      }
+    }
+  }
+</script>
+</body>
+</html>
