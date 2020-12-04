@@ -23,9 +23,9 @@
 <button onclick="btn4()">确定</button>
 <br/>
 请输入RGB颜色值,只能输入数字,未输入默认值为0
-<input placeholder="Red:0"  size="5" type="text" id="RColor">
-<input placeholder="Green:0"  size="5" type="text" id="GColor">
-<input placeholder="Blue:0"  size="5" type="text" id="BColor">
+<input placeholder="Red:0-255"  size="8" type="text" id="RColor">
+<input placeholder="Green:0-255"  size="8" type="text" id="GColor">
+<input placeholder="Blue:0-255"  size="8" type="text" id="BColor">
 <button onclick="btn5()">确定</button>
 <br/>
 对齐方式
@@ -40,6 +40,7 @@
   document.getElementById("textarea").style.fontSize=size+"px"
   function btn1() {
     size+=5
+    console.log(document.all)
     document.all[6].style.fontSize=size+"px"
   }
   function btn2(){
