@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>单选框与复选框</title>
+</head>
+<body>
+<!-- 单选框 -->
+<form id="myForm">
+  姓名：
+  <input size="5" type="text" id="name">
+  <br/>
+  性别:
+  <label><input type="radio" name="sex" value="男">男</label>
+  <label><input type="radio" name="sex" value="女">女</label>
+<!-- 复选框 -->
+  <br/>
+  喜欢的运动：
+  <label><input type="checkbox" name="like" value="篮球">篮球</label>
+  <label><input type="checkbox" name="like" value="排球">排球</label>
+  <label><input type="checkbox" name="like" value="跑步">跑步</label>
+  <label><input type="checkbox" name="like" value="游泳">游泳</label>
+  <br/>
+  <button onclick="btn1()">提交</button>
+</form>
+<script>
+  function btn1(){
+    let form=document.getElementById("myForm")
+    let tagElements=form.getElementsByTagName("input")
+    let elements = [];
+    for(let i=0; i<tagElements.length; i++){
+      if (tagElements[i].type === "text" && tagElements[i].value != null && tagElements[i].value !== "")
+        elements.push(tagElements[i].value);
+      if(tagElements[i].checked){
+        elements.push(tagElements[i].value);
+      }
+    }
+    alert(elements)
+  }
+</script>
+</body>
+</html>

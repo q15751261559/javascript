@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>下拉框</title>
+</head>
+<body>
+<!-- 单选框 -->
+<form id="myForm">
+  姓名：
+  <input size="5" type="text" id="name">
+  <br/>
+  性别:
+  <label><input type="radio" name="sex" value="男">男</label>
+  <label><input type="radio" name="sex" value="女">女</label>
+  <!-- 复选框 -->
+  <br/>
+  爱好：<select multiple="multiple" id="select">
+    <option value="篮球">篮球</option>
+    <option value="排球">排球</option>
+    <option value="跑步">跑步</option>
+    <option value="游泳">游泳</option>
+  </select>
+  <br/>
+  <button onclick="btn1()">提交</button>
+</form>
+<script>
+  function btn1(){
+    let form=document.getElementById("myForm")
+    let a=form.childNodes
+    let elements = [];
+    for(let i=0; i<a.length; i++){
+      if (a[i].type === "text" && a[i].value != null && a[i].value !== "")
+        elements.push(a[i].value);
+      if(a[i].tagName==="LABEL"&&a[i].childNodes[0].checked){
+        elements.push(a[i].childNodes[0].value)
+      }
+      if(a[i].tagName==="SELECT")
+      {
+        for (let j=0;j<a[i].length;j++)
+        {
+          if (a[i][j].selected)
+          {
+            elements.push(a[i][j].value)
+          }
+        }
+      }
+    }
+    alert(elements)
+  }
+</script>
+</body>
+</html>
