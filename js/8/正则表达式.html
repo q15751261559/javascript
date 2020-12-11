@@ -5,21 +5,42 @@
   <title>正则</title>
 </head>
 <body>
-<form id="yonghu">
-手机号：<input onsubmit="fun1()" size="20" placeholder="11位" type="text" id="phone">
-E-mail：<input onsubmit="fun2()" size="20" placeholder="请输入合法邮箱" type="text" id="email">
-<button onclick="btn1(fun(),fun2())">提交</button>
+<form action="submit.html" onsubmit="return fun1()">
+手机号：<input size="20" placeholder="11位手机号" type="text" id="phone"><span id="phoneSpan"></span>
+  <br/>
+E-mail：<input size="20" placeholder="请输入合法邮箱" type="text" id="email"><span id="emailSpan"></span>
+  <br/>
+  <input type="submit" value="提交" />
 </form>
 <script>
   function fun1(){
-
-  }
-  function fun2(){
-
-  }
-  function btn1(fun1,fun2)
-  {
-
+    let phone=document.getElementById("phone").value
+    let email=document.getElementById("email").value
+    if (phone!==""&&email!=="")
+    {
+      let a=(/^\d{11}$/)
+      let b=(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)
+      if (a.test(phone)&&b.test(email))
+      {
+        alert("符合要求")
+        return true
+      }else
+      {
+        if (!a.test(phone))
+        {
+          document.getElementById("phoneSpan").innerText="请输入正确的手机号"
+        }
+        if (!b.test(email))
+        {
+          document.getElementById("emailSpan").innerText="请输入合法邮箱"
+        }
+        return false
+      }
+    }else
+    {
+      alert("手机号和邮箱不能为空")
+      return false
+    }
   }
 </script>
 </body>

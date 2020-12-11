@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>复选框练习</title>
+</head>
+<body>
+<div id="like">
+  个人爱好:
+  <label><input type="checkbox" name="like" value="运动">运动</label>
+  <label><input type="checkbox" name="like" value="游戏">游戏</label>
+  <label><input type="checkbox" name="like" value="锻炼">锻炼</label>
+  <label><input type="checkbox" name="like" value="学习">学习</label>
+</div>
+<div>
+  <label><input type="checkbox" onclick="SelectAllOnclick()" id="SelectAll" value="全选">全选/全不选</label>
+</div>
+<div>
+  <label><input type="checkbox" onclick="CounterElectionOnclick()" id="CounterElection" value="反选">反选</label>
+</div>
+</body>
+<script>
+  let boole=true
+  let a=document.getElementById("like").childNodes
+  function SelectAllOnclick(){
+    for (let i=0;i<a.length;i++)
+    {
+      if (a[i].tagName==="LABEL"&&a[i].childNodes[0].checked!==boole)
+      {
+        a[i].childNodes[0].checked=boole
+      }
+    }
+    boole=!boole
+  }
+  function CounterElectionOnclick(){
+    for (let i=0;i<a.length;i++)
+    {
+      if (a[i].tagName==="LABEL")
+      {
+        a[i].childNodes[0].checked=!a[i].childNodes[0].checked
+      }
+    }
+  }
+
+</script>
+</html>
