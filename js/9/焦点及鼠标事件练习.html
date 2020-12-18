@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>焦点及鼠标事件练习</title>
+</head>
+<body>
+<input onblur="onblur1(this)"  value="请输入初始用户名" onfocus="onfocus1(this)" size="20" type="text">
+<script>
+  let initialName="请输入初始用户名"
+  function onblur1(obj){
+    if (obj.value==="")
+    {
+      obj.value=initialName;
+    }
+  }
+  function onfocus1(obj)
+  {
+    if (obj.value===initialName)
+    {
+      obj.value="";
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>onchange事件练习</title>
+</head>
+<body>
+<img id="tu" height="1000" width="800"/>
+<br/>
+<select id="select" onchange="onchange1(this)">
+  <option value ="../../img/timg.jpg">图片1</option>
+  <option value="../../img/timg1.jpg">图片2</option>
+  <option value ="../../img/timg2.jpg">图片3</option>
+</select>
+<script>
+  document.getElementById("tu").src=document.getElementById("select").value
+  function onchange1(obj){
+    document.getElementById("tu").src=obj.value
+  }
+</script>
+</body>
+</html>

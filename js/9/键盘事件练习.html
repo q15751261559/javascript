@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>键盘事件练习</title>
+</head>
+<body>
+<textarea style="height: 150px;width: 300px" name="文本框" class="class1" id="textarea"></textarea>
+<br/>
+<input size="20" type="text" id="textInput">
+<script>
+  let textarea=document.getElementById("textarea")
+  let text=document.getElementById("textInput")
+  document.onkeydown=function ()
+  {
+    if (event.keyCode===13&&event.ctrlKey){
+      if (text.value!=="")
+      {
+        textarea.value+=text.value+"\n"
+        text.value=""
+      }
+    }
+  }
+</script>
+</body>
+</html>
