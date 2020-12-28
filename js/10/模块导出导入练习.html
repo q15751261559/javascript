@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>模块导出导入练习</title>
+</head>
+<body>
+<!--<input placeholder="请输入体重" size="25" type="text" id="weight">-->
+<!--<label><input type="radio" name="weight" value="kgTp">千克转磅</label>-->
+<!--<label><input type="radio" name="weight" value="pTKG">磅转千克</label>-->
+<!--<button onclick="btn1()">提交</button>-->
+<!--<br/>-->
+<div id="dv"></div>
+<script type="module">
+  import * as a from "./test1";
+
+  document.getElementById("dv").innerText = "改变了";
+
+  // function btn1(){
+  //   document.getElementById("dv").innerText = "改变了";
+  //   if (document.getElementsByName("weight")[0].checked)
+  //   {
+  //     document.getElementById("div").innerText=kgToPounds(document.getElementById("weight").value)
+  //   }
+  // }
+</script>
+</body>
+</html>
