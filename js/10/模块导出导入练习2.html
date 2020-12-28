@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    table{
+      border:solid #add9c0;
+      border-width:1px 0px 0px 1px
+    }
+    td{
+      border:solid #add9c0;
+      border-width:0px 1px 1px 0px;
+      padding-left:10px;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+<input placeholder="请输入姓名"  size="8" type="text" id="studentId">
+<input placeholder="请输入学号"  size="8" type="text" id="studentName">
+<button id="add">插入</button>
+<br/>
+<input placeholder="请输入学号"  size="8" type="text" id="selectStudentId">
+<br/>
+<button id="select">查找</button>
+<button id="del">删除</button>
+<script type="module">
+  //使用ES6模块化语法，分别使用不同的模块：模块1：创建一个学生类；
+  //模块2：创建一个班级对象（可以是一个默认导出的字面量对象），其中班级中有一个表示班级学生的数组。
+  //同时，该模块中有一个操作学生数组元素的方法（比如，可以新增、删除、查询等）。
+  //同时，创建一个网页，设计一个信息输入表单，输入欲新增的学生信息，
+  //并调用模块暴露的方法和班级对象，将学生信息增加到班级中，并打印出来。
+  import {student} from "./student.js";
+  import {Class,addStudent,delStudent,selectStudent} from "./Class.js";
+  window.onload =RefreshTable;
+  function RefreshTable()
+  {
+    if (document.getElementsByTagName("table").length!==0)
+    {
+      document.getElementsByTagName("table")[0].parentNode.removeChild(document.getElementsByTagName("table")[0])
+    }
+    let table,body;
+    table=document.createElement("table")
+    body=document.getElementsByTagName("body")[0]
+    for (let i=0;i<Class.studentList.length;i++)
+    {
+      let tr=document.createElement("tr")
+      let tdStudent=document.createElement("td")
+      tdStudent.innerHTML=Class.studentList[i].toString()
+      tr.appendChild(tdStudent)
+      table.appendChild(tr)
+    }
+    body.appendChild(table);
+  }
+  document.getElementById("add").onclick=function (){
+    let id=document.getElementById("studentId").value;
+    let name=document.getElementById("studentName").value;
+    let stu=new student(id,name)
+    addStudent(stu)
+    alert("添加成功");
+    RefreshTable();
+  }
+  document.getElementById("select").onclick=function (){
+    let id=document.getElementById("selectStudentId").value;
+    selectStudent(id)
+  }
+  document.getElementById("del").onclick=function (){
+    let id=document.getElementById("selectStudentId").value;
+    delStudent(id);
+    RefreshTable();
+  }
+</script>
+</body>
+</html>

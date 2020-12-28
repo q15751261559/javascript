@@ -1,9 +1,10 @@
 
-export function kgToPounds(kg){
+ function kgToPounds(kg){
   return (kg*2.2)
 }
 
-export function poundsToKg(pound){
+ function poundsToKg(pound){
   return (pound/2.2)
 }
 
+export {kgToPounds,poundsToKg};
