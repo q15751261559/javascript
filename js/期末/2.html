@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>2</title>
+</head>
+<body>
+<div id="div"></div>
+<script>
+  function time(){
+    let div=document.getElementById("div")
+    let time=new Date()
+    let hour=time.getHours()
+    if (hour>=0&&hour<6)
+    {
+      div.innerText="你不会是熬通宵吧，别太辛苦哦!"
+    }
+    if (hour>=6&&hour<8)
+    {
+      div.innerText="早上好!"
+    }
+    if (hour>=8&&hour<11)
+    {
+      div.innerText="上午好!"
+    }if (hour>=11&&hour<13)
+    {
+      div.innerText="午饭吃过了吗!"
+    }
+    if (hour>=13&&hour<17)
+    {
+      div.innerText="下午好!"
+    }
+    if (hour>=17&&hour<24)
+    {
+      div.innerText="晚上好!"
+    }
+  }
+  setInterval("time()",1000);
+</script>
+</body>
+</html>

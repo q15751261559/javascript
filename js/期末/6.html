@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>6</title>
+</head>
+<body>
+<textarea  id="textarea"></textarea>
+<br/>
+字体大小<input  size="25" type="text" id="fontsize">
+十六进制颜色<input  size="25" type="text" id="16color">
+对齐方式<input  size="25" type="text" id="textAlign">
+<input type="button" onclick="btn1()">
+<br/>
+<script>
+  let textarea=document.getElementById("textarea")
+  function btn1(){
+    let size=document.getElementById("fontsize").value
+    let color=document.getElementById("16color").value
+    let textAlign=document.getElementById("textAlign").value
+    textarea.style.fontSize=size+"px"
+    textarea.style.color=color
+    textarea.style.textAlign=textAlign
+  }
+</script>
+</body>
+</html>

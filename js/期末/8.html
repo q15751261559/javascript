@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>正则</title>
+</head>
+<body>
+<form action="//www.baidu.com/" onsubmit="return fun1()">
+  手机号：<input size="20"  type="text" id="phone">
+  <br/>
+  姓名：<input size="20" type="text" id="name">
+  <br/>
+  <input type="submit" value="提交" />
+</form>
+<script>
+  function fun1(){
+    let phone=document.getElementById("phone").value
+      let a=(/^\d{11}$/)
+      if (a.test(phone))
+      {
+        alert("符合要求")
+        return true
+      }else
+      {
+        return false
+      }
+  }
+</script>
+</body>
+</html>

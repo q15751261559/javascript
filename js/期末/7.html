@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>7</title>
+</head>
+<body>
+<div id="like">
+  个人爱好:
+  <input type="checkbox" name="like" value="运动">运动
+  <input type="checkbox" name="like" value="游戏">游戏
+  <input type="checkbox" name="like" value="锻炼">锻炼
+  <input type="checkbox" name="like" value="学习">学习
+</div>
+<div>
+  <label><input type="checkbox" onclick="SelectAllOnclick(this)" id="SelectAll" value="全选">全选/全不选</label>
+</div>
+<div>
+  <label><input type="checkbox" onclick="CounterElectionOnclick()" id="CounterElection" value="反选">反选</label>
+</div>
+</body>
+<script>
+  let a=document.getElementsByName("like")
+  function SelectAllOnclick(obj){
+    for (let i=0;i<a.length;i++)
+    {
+      a[i].checked=obj.checked
+    }
+  }
+  function CounterElectionOnclick(){
+    for (let i=0;i<a.length;i++)
+    {
+        a[i].checked=!a[i].checked
+    }
+  }
+
+</script>
+</html>

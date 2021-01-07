@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3</title>
+</head>
+<body>
+<input type="button" value="幸运数字机" onclick="btn1()">
+<script>
+  let i=8
+  let a=0,b=0
+  function btn1(){
+    a++
+    let j
+    let k=""
+    let bool=false
+    for (let z=0;z<3;z++) {
+      j=Math.floor(Math.random() * 9) + 1;
+      if (j===8)
+      {
+        bool=true
+      }
+      k=k+j+" "
+    }
+    let str="输"
+    if (bool === true)
+    {
+      str="赢"
+      b++
+    }
+    let str2="胜率为:"+b/a*100+"%"
+    alert(k+"\n"+str+"\n"+str2)
+  }
+</script>
+</body>
+</html>
